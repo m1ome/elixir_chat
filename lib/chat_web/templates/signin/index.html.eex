@@ -1,0 +1,13 @@
+<h1>Login</h1>
+
+<%= form_for :user, "/signin", fn f -> %>
+  <label>
+    Email: <%= text_input f, :email %>
+  </label>
+
+  <label>
+    Password: <%= text_input f, :password %>
+  </label>
+
+  <%= submit "Login" %>
+<% end %>
